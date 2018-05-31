@@ -24,6 +24,7 @@ $(document).ready(function () {
             var scrollVal = $(this).scrollTop();
             if (scrollVal >= 160) {
                 $('.nav-bar').addClass('fixed-top');
+
             } else {
                 $('.nav-bar').removeClass('fixed-top');
             }
