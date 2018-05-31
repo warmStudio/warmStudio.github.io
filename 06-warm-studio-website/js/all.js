@@ -19,18 +19,6 @@ var swiper = new Swiper('.swiper-container', {
 /*individual*/
 $(document).ready(function () {
     $(function () {
-        /*window滾至 .about-intro h3時觸發效果*/
-        $(window).scroll(function () {
-            var windowHeght = $(window).scrollTop();
-            var window_h = $(window).height();
-            var aboutH3 = $('.aboutUs-intro h3').offset().top;
-            var aboutH3_h = aboutH3 - window_h;
-            if (windowHeght > aboutH3_h) {
-                $('.aboutUs-intro h3').addClass('active');
-            } else {
-                $('.aboutUs-intro h3').removeClass('active');
-            }
-        });
         /*window滾至160以上，添加fixed效果*/
         $(window).scroll(function () {
             var scrollVal = $(this).scrollTop();
@@ -38,15 +26,6 @@ $(document).ready(function () {
                 $('.nav-bar').addClass('fixed-top');
             } else {
                 $('.nav-bar').removeClass('fixed-top');
-            }
-        });
-        /*banner隨滑鼠滾動，做些許位移*/
-        $(window).scroll(function () {
-            var scrollVal = $(this).scrollTop();
-            if (scrollVal >= 100) {
-                $('.banner-p').addClass('active');
-            } else {
-                $('.banner-p').removeClass('active');
             }
         });
         /*navbar連結滑動效果*/
@@ -60,33 +39,3 @@ $(document).ready(function () {
 });
 /*aos*/
 AOS.init();
-/*anime.js*/
-$(window).scroll(function () {
-    anime.speed = .5;
-    var windowHeght = $(window).scrollTop();
-    var window_h = $(window).height();
-    var aboutH3 = $('.aboutUs-intro h3').offset().top;
-    var aboutH3_h = aboutH3 - window_h;
-    if (windowHeght >= aboutH3_h) {
-        var functionBasedDuration = anime({
-            targets: '.aboutUs-intro p span',
-            translateX: 1000,
-            direction: 'alternate',
-            loop: true,
-            duration: function (el, i, l) {
-                return 1000 + (i * 1000);
-            }
-        });
-    } else {
-        var functionBasedDuration = anime({
-            targets: '.aboutUs-intro p span',
-            translateX: -1000,
-            direction: 'alternate',
-            loop: true,
-            duration: function (el, i, l) {
-                return 1000 + (i * 1000);
-            }
-        });
-    }
-});
-

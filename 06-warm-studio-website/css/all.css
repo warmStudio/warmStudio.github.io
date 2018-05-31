@@ -161,10 +161,6 @@ nav ul li a span:hover{
   background-position-y: 0;
   margin:0;
   background-repeat: no-repeat;
-  transition: all 2s;
-}
-.banner-p.active{
-  background-position-y: 70px;
 }
 @media (max-width:768px){
 	.swiper-container {
