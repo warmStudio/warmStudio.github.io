@@ -40,3 +40,32 @@ $(document).ready(function () {
 });
 /*aos*/
 AOS.init();
+/*anime.js*/
+$(window).scroll(function () {
+    anime.speed = .3;
+    var windowHeght = $(window).scrollTop();
+    var window_h = $(window).height();
+    var aboutH3 = $('.aboutUs-intro h3').offset().top;
+    var aboutH3_h = aboutH3 - window_h;
+    if (windowHeght >= aboutH3_h) {
+        var functionBasedDuration = anime({
+            targets: '.aboutUs-intro p span',
+            translateX: 1000,
+            direction: 'alternate',
+            loop: true,
+            duration: function (el, i, l) {
+                return 1000 + (i * 1000);
+            }
+        });
+    } else {
+        var functionBasedDuration = anime({
+            targets: '.aboutUs-intro p span',
+            translateX: -1000,
+            direction: 'alternate',
+            loop: true,
+            duration: function (el, i, l) {
+                return 1000 + (i * 1000);
+            }
+        });
+    }
+});

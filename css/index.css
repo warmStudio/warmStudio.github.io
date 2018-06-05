@@ -3,23 +3,28 @@
 /* leather start */
 .leather-about-title {
 	padding: 15px;
-	font-size: 110px;
+	font-size: 100px;
 }
 .leather-about-txt{
-	font-size: 20px;
+	font-size: 18px;
 	padding: 15px;
 	letter-spacing: 1.5px;
 }
 .leather-product {
 	border-radius: 10px;
-	padding: 3% 2% 1% 2%;
+	padding: 3% 0 1% 0;
+}
+.leather-product-box{
+	width: 19%;
+	margin: 0 3%;
+	float: left;
 }
 .list-pic-frame{
 	position: relative;
 }
 .list-img {
 	width: 100%;
-  }
+}
 .leather-product-info {
 	position: absolute;
 	font-weight: 900;
@@ -44,8 +49,7 @@
 	height: 30px;
 	line-height: 30px;
 	font-size: 26px;
-	bottom: 20px;
-	right: 30px;
+	margin-right: 3%;
 	transition: all 1s;
 	border-radius: 5px;
 }
@@ -72,10 +76,15 @@
 		font-size: 55px;
 	}
 	.leather-product{
-		padding: 6% 5% 1% 5%;
+		padding: 2% 0 0 0;
 	}
 	.leather-product-box{
-		margin-bottom: 4%;
+		width: 40%;
+		margin: 3% 5%;
+		float: left;
+	}
+	.leather-list-btn {
+		margin-right: 5%;
 	}
 }
 @media (max-width:768px){
@@ -88,6 +97,14 @@
 	.leather-about-txt{
 		letter-spacing: 2px;
 	}
+	.leather-product-box{
+		width: 40%;
+		margin: 3% 5%;
+		float: left;
+	}
+	.leather-list-btn {
+		margin-right: 5%;
+	}
 }
 @media (max-width:576px){
 	.leather-about-txt{
@@ -97,8 +114,12 @@
 		padding: 15px;
 	}
 	.leather-product-box{
-		padding: 15px 35px 10px 35px;
-		margin-bottom: 15px;
+		width: 90%;
+		margin: 5% 5%;
+		float: left;
+	}
+	.leather-list-btn {
+		margin-right: 5%;
 	}
 	.leather-product-info {
 		height: 100px;
@@ -150,6 +171,8 @@
 .aboutUs-intro p {
 	font-size: 20px;
 	font-weight: 900;
+	text-align: center;
+	transform: translateX(-1000px);
 }
 .aboutUs-intro p span{
 	display: block;
@@ -170,6 +193,9 @@
 	.aboutUs-intro {
 		background-size: cover;
 	}
+	.aboutUs-intro p{
+		text-align: center;
+	}
 }
 @media (max-width:576px){
 	.aboutUs-list li{
@@ -188,14 +214,20 @@
 	}
 	.aboutUs-intro p {
 		font-size: 20px;
+		text-align: left;
+		transform: translateX(0px);
 	}
 	.aboutUs-intro p span{
 		font-size: 16px;
+		display: inline;
 	}
 }
 @media(max-width:400px){
 	.aboutUs-intro-bg1,.aboutUs-intro-bg2{
 		height: 75vh;
+	}
+	.aboutUs-intro p {
+		transform: translateX(0px);
 	}
 }
 /* contact start */
@@ -254,7 +286,9 @@
 		margin-left: 100px;
 	}
 	.contact-box p {
-		text-align: center;
+		max-width: 357px;
+		text-align: left;
+		margin: 0 auto;
 	}
 	.contact-box .message input,textarea{
 		width: 100%;
@@ -289,13 +323,4 @@
 	.contact-box .message input{
 		font-size: 20px;
 	}
-}
-/* footer start */
-footer .container{
-	letter-spacing: 1px;
-	height: 80px;
-	line-height: 80px;
-	color: #fff;
-	font-size: 20px;
-	text-align: center;
 }

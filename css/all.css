@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   letter-spacing: 1px;
+  font-size: 'Microsoft JhengHei';
 }
 ol, ul {
 	list-style: none;
@@ -86,12 +87,25 @@ a:hover{
 	background-image: url('../img/LOGO.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center;
-}
-h1{
-  text-align: center;
+  background-position: center;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 30px;
 }
+
+@media (max-width:992px){
+  .logo {
+    background-image: url('');
+    text-indent: 0;
+    white-space: none;
+    height: 90px;
+  }
+  .logo span {
+    display: block;
+  }
+}
+
 /* navbar */
 nav {
   font-size: 20px;
@@ -185,4 +199,15 @@ nav ul li a span:hover{
   .banner{
     padding: 0;
   }
+}
+
+
+/* footer start */
+footer .container{
+	letter-spacing: 1px;
+	height: 80px;
+	line-height: 80px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
 }
