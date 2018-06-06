@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -85,28 +84,15 @@ a:hover{
 .logo {
 	width: 123px;
 	height: 130px;
-	background-image: url('../img/logo.svg');
+	background-image: url('../img/LOGO.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-  background-position: center;
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
+	background-position: center;
+}
+h1{
+  text-align: center;
   font-size: 30px;
 }
-
-@media (max-width:992px){
-  .logo {
-    background-image: url('');
-    text-indent: 0;
-    white-space: none;
-    height: 90px;
-  }
-  .logo span {
-    display: block;
-  }
-}
-
 /* navbar */
 nav {
   font-size: 20px;
@@ -122,7 +108,7 @@ nav ul li a span:hover{
 .moblie-logo {
   width: 40px;
 	height: 40px;
-	background-image: url('../img/logo.svg');
+	background-image: url('../img/LOGO.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -200,15 +186,4 @@ nav ul li a span:hover{
   .banner{
     padding: 0;
   }
-}
-
-
-/* footer start */
-footer .container{
-	letter-spacing: 1px;
-	height: 80px;
-	line-height: 80px;
-	color: #fff;
-	font-size: 20px;
-	text-align: center;
 }
