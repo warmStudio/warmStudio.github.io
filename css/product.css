@@ -1,5 +1,6 @@
 body {
-	font-family: 'sourcehansans-tc','Microsoft JhengHei';
+  font-family: 'sourcehansans-tc','Microsoft JhengHei';
+  font-weight: 300;
   }
 .banner-container{
     height:280px;
