@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   letter-spacing: 1px;
-  font-family: 'Noto Sans TC','sourcehansans-tc','Microsoft JhengHei';
+  font-family: 'sourcehansans-tc','Microsoft JhengHei';
 }
 ol, ul {
 	list-style: none;
