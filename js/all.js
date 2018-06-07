@@ -42,7 +42,7 @@ $(document).ready(function () {
 AOS.init();
 /*anime.js*/
 $(window).scroll(function () {
-    anime.speed = .3;
+    anime.speed = .6;
     var windowHeght = $(window).scrollTop();
     var window_h = $(window).height();
     var aboutH3 = $('.aboutUs-intro h3').offset().top;
