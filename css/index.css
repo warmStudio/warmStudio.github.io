@@ -1,5 +1,5 @@
 body {
-    font-family: 'sourcehansans-tc', 'Microsoft JhengHe';
+    font-family: 'Microsoft JhengHei';
 }
 
 /*banner start*/
@@ -9,6 +9,7 @@ body {
 .leather-about-title {
     padding: 15px;
     font-size: 100px;
+    font-family: 'Sans-serif';
 }
 
 .leather-about-txt {

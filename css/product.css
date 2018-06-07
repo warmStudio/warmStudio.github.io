@@ -1,5 +1,5 @@
 body {
-    font-family: 'sourcehansans-tc', 'Microsoft JhengHe'f;
+    font-family: 'Microsoft JhengHei';
     font-weight: 300;
 }
 
@@ -123,6 +123,7 @@ body {
     text-align: center;
     line-height: 1.3;
     height: 100%;
+    font-family: 'Sans-serif';
 }
 
 .card-block-2 {
